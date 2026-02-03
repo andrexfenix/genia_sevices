@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/andre/Documents/Documentos/repos/genia_services/python/credit_scoring/mlruns/831379902742482210/21d96ea939dd409cb92e4703716e624a/artifacts
+end_time: 1769915323440
+entry_point_name: ''
+experiment_id: '831379902742482210'
+lifecycle_stage: active
+run_id: 21d96ea939dd409cb92e4703716e624a
+run_name: credit_scoring-training_config-german_credit_risk_v110
+run_uuid: 21d96ea939dd409cb92e4703716e624a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1769915302072
+status: 3
+tags: []
+user_id: andre
