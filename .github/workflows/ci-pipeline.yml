@@ -1,0 +1,26 @@
+name: Pipeline CI/CD MLops
+
+on:
+  pull_request:
+    branches: [ dev ]
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Check repository
+      uses: actions/checkout@v6
+      
+      - name: Setup python
+      uses: actions/setup-python@v6
+      with:
+        python-version: '3.10.19'
+
+      - name: Install requeriments
+      run: pip install -m ./python/credit_scoring/requirements.txt
+
+      - name: Run tests
+      run: pytest ./python/credit_scoring/tests/test_model_creation.py
+      
+    
+      
