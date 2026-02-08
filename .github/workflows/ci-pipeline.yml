@@ -6,21 +6,19 @@ on:
 
 jobs:
   build_and_test:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
+
     steps:
       - name: Check repository
-      uses: actions/checkout@v6
-      
-      - name: Setup python
-      uses: actions/setup-python@v6
-      with:
-        python-version: '3.10.19'
+        uses: actions/checkout@v4
 
-      - name: Install requeriments
-      run: pip install -m ./python/credit_scoring/requirements.txt
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install requirements
+        run: pip install -r ./python/credit_scoring/requirements.txt
 
       - name: Run tests
-      run: pytest ./python/credit_scoring/tests/test_model_creation.py
-      
-    
-      
+        run: pytest ./python/credit_scoring/tests/test_model_creation.py
