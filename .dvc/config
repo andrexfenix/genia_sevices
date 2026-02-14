@@ -1,0 +1,4 @@
+['remote "genia_services_storage"']
+    url = https://dagshub.com/darkspartan720/genia_sevices.dvc
+['remote "origin"']
+    url = https://dagshub.com/darkspartan720/genia_sevices.dvc
